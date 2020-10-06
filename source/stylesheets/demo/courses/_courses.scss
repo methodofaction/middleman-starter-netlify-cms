@@ -1,4 +1,4 @@
-.products {
+.courses {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $background-primary-color;
@@ -7,10 +7,10 @@
     margin: 0 0 30px;
   }
 
-  .product {
+  .courses {
     @extend %column;
     @extend %col-sm-4;
-    @extend %product;
+    @extend %course;
   }
 
   @media screen and (max-width: $screen-xs-max) {

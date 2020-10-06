@@ -24,7 +24,7 @@ const BlogPreview = ({ entry, widgetFor }) => {
 const ProductPreview = ({ entry, widgetFor }) => {
   const data = entry.get('data').toJS()
   return (
-    <div className="product-detail">
+    <div className="course-detail">
       <div className="image" style={{ backgroundImage: `url('${data.image}')` }}></div>
       <div className="content">
         <div className="meta">

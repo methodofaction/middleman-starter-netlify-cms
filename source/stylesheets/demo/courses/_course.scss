@@ -1,4 +1,4 @@
-%product {
+%course {
   color: $text-color;
   margin-bottom: 30px;
 
@@ -21,11 +21,11 @@
     @extend %img-responsive;
   }
 
-  .product-image, .product-content {
+  .course-image, .course-content {
     background-color: #fff;
   }
 
-  .product-content {
+  .course-content {
     padding: 10px 30px;
   }
 

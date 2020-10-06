@@ -1,5 +1,5 @@
 ---
-title: Kaldi - Middleman + Netlify CMS Example
+title: Cursos en Blank Page
 ---
 
 section.hero style=background_image(image_path(data.pages.home.hero.image))
@@ -13,17 +13,17 @@ section.homepage-story
       .story-content
         = markdown data.pages.home.story
 
-section.homepage-products.products
+section.homepage-courses.courses
   .container
     h2
-      | Products
+      | Courses
     .row
-      //product is structured: ['filename', 'data']
-      //sort by newest product
-      - data.products.sort {|a,b| b[1].date <=> a[1].date}.first(3).each do | product |
+      //course is structured: ['filename', 'data']
+      //sort by newest course
+      - data.courses.sort {|a,b| b[1].date <=> a[1].date}.first(3).each do | course |
 
         //to get the actual data:
-        = partial 'partials/products/product', locals: {product: product[1]}
+        = partial 'partials/courses/course', locals: {course: course[1]}
 
 section.homepage-news.news
   .container

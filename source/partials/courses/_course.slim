@@ -1,0 +1,16 @@
+//link to product by converting the title to a slug
+.course
+  = link_to '/course/' + course.title.parameterize + '/'
+    .course-image
+      = image_tag course.image
+    .course-content
+      .title
+        h3 = course.title
+      .price
+        p 
+          - currency = data.settings.units.currency || '€' 
+          = currency + course.price.to_s 
+      .weight
+        p 
+          - weight = data.settings.units.weight || 'kg'
+          = course.weight.to_s + weight
